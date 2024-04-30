@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #4286f4; /* Blue background */
+    color: #fff; /* White text */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 2s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.long-box {
+    background-color: #000; /* Black box */
+    padding: 40px; /* Increase padding for bigger boxes */
+    border-radius: 10px;
+    text-align: left;
+    max-width: 1000px; /* Longer box */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow */
+}
+
+.second-box {
+    background-color: #000; /* Black box */
+    padding: 40px; /* Increase padding for bigger boxes */
+    border-radius: 10px;
+    text-align: left;
+    max-width: 1000px; /* Longer box */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow */
+}
+
+
+.header-text {
+    background: linear-gradient(to right, #ff5e62, #4286f4); /* Gradient header text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.gray-text {
+    color: #999; /* Gray text */
+}
+
+.second-box {
+    background-color: #000; /* Black box */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 800px; /* Longer box */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow */
+}
+
+.purple-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.small-box {
+    width: 200px; /* Longer small boxes */
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px; /* Smaller small boxes */
+    color: #fff;
+    font-weight: bold;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow */
+    animation: moveRightAnimation 2s ease-in-out forwards; /* Animation */
+}
+
+@keyframes moveRightAnimation {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+.small-box:nth-child(2) {
+    animation-delay: 0.2s; /* Delay for the second box */
+}
+
+.small-box:nth-child(3) {
+    animation-delay: 0.4s; /* Delay for the third box */
+}
+
+.small-box:nth-child(4) {
+    animation-delay: 0.6s; /* Delay for the fourth box */
+}
+
+.small-box:nth-child(5) {
+    animation-delay: 0.8s; /* Delay for the fifth box */
+}
+.long-box {
+    background-color: #000; /* Black box */
+    padding: 40px; /* Increase padding for bigger boxes */
+    border-radius: 10px;
+    text-align: left;
+    max-width: 1000px; /* Longer box */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow */
+}
+
+.second-box {
+    background-color: #000; /* Black box */
+    padding: 40px; /* Increase padding for bigger boxes */
+    border-radius: 10px;
+    text-align: left;
+    max-width: 1000px; /* Longer box */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow */
+}
+
