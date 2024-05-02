@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1d1a1a; /* Blue background */
+    color: #fff; /* White text */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 2s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.long-box {
+    background-color: #585757; /* Black box */
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.header-text {
+    background: linear-gradient(to right, #00fff2, #0400ff); /* Gradient header text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.gray-text {
+    color: #000000; /* Gray text */
+}
+
+.second-box {
+    background-color: #585757; /* Black box */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.purple-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.moving-box {
+    width: 100px;
+    height: 50px;
+    background-color: #585757;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 5px;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveToLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100px); }
+}
+
+.chatgpt {
+    animation-name: moveToLeft;
+}
+
+.vercel {
+    animation-name: moveToLeft;
+    animation-delay: 1s;
+}
+
+.replit {
+    animation-name: moveToLeft;
+    animation-delay: 2s;
+}
+
+.visual-studio {
+    animation-name: moveToLeft;
+    animation-delay: 3s;
+}
+
+.visual-studio-code {
+    animation-name: moveToLeft;
+    animation-delay: 4s;
+}
